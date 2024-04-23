@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <v-container fluid >
     <v-row
       class="mb-6"
@@ -12,7 +12,7 @@
       <v-divider class="border-opacity-0" vertical></v-divider>
       <v-col :cols="cols[1]" class="flex-grow">
         
-          <!-- <ChatBox/> -->
+          <ChatBox/>
       </v-col>
     </v-row>
   </v-container>
@@ -41,4 +41,4 @@ export default defineComponent({
 <style>
 
 
-</style>
+</style> -->

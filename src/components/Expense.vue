@@ -56,7 +56,7 @@
   color: blueviolet;
   text-transform: none;
   font-size: 19px;
-  font-family: radley-regular;
+  font-family: var(--font-radley);
   border:3px solid;
   border-radius: 13px;
   }

@@ -23,7 +23,7 @@
   width: 30%;
   height: 80%;
   position: absolute;
-  left: 200px; 
+  left: 14.5rem; 
   align-items: center;
   align-content: center;
     z-index: 1; 

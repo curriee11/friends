@@ -4,27 +4,27 @@
       <v-col :cols="showLeftPanel ? 4 : 0" v-if="showLeftPanel">
         <div class="left-panel">
           <v-card flat>
-            <v-toolbar class="tool" color="rgba(208, 195, 210, 0.848)" dense flat>
+            <v-toolbar class="tool" color="white" dense flat>
             <v-row class="fill-height" no-gutters align="center">
               <v-col cols="5" class="px-0">
                 <v-text-field
                   hide-details
-                  outlined
                   dense
-                  solo
+                  variant="solo"
                   color="transparent"
                   placeholder="Search"
                   rounded
                   clearable
                   append-inner-icon="mdi-magnify"
-                 
                 ></v-text-field>
               </v-col>
-              <v-col cols="7">
-                <v-btn variant="outlined" class="expense" style="border: 3px solid #673ab7; margin-right: 8px;">
-                  <span class="label"  style="color: #673ab7;"><b>+ Add Friend</b></span>
+              <v-col cols="5">
+                <v-btn variant="outlined" class="addfriend" style="border: 3px solid blueviolet; ">
+                  <span class="label"  style="color: blueviolet;"><b>+ Add Friend</b></span>
                 </v-btn>
-                <v-btn :class="notificationIcon" icon >
+              </v-col>
+              <v-col cols="2">
+                <v-btn class="notificationIcon" icon >
                   <v-icon class="icon">mdi-bell-outline</v-icon>
                 </v-btn>
               </v-col>
@@ -78,6 +78,15 @@ export default {
 </script>
 
 <style scoped>
+.v-container{
+  margin-top: 2rem;
+}
+.v-text-field{
+  margin-left: 0.75rem;
+  width:90%;
+  outline-color: blueviolet;
+  box-shadow: none;
+}
 .left-panel, .right-panel {
   padding: 16px;
 }
@@ -92,8 +101,25 @@ export default {
   background-color: rgba(208, 195, 210, 0.848) ;
   box-shadow: none;
 }
+.addfriend{
+  width: 80%;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-radley);
+  text-transform: capitalize; 
+  color: blueviolet;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.label{
+  text-overflow: clip;
+  font-size:medium;
+}
+.notificationIcon{
+}
 .icon {
-    color:#673ab7;
+    color:blueviolet;
     }
     .notificationIcon:active {
     color: #673ab7;

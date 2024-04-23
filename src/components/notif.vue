@@ -1,6 +1,6 @@
 <template>
 
-    <v-btn :class="notificationIcon" icon size="47" style="border: 3px solid #673ab7; position: absolute; top: 15px;">
+    <v-btn :class="notificationIcon" icon size="47" style="border: 3px solid blueviolet; position: absolute; top: 15px;">
      <v-icon class="icon">mdi-bell-outline</v-icon>
     </v-btn>
    
@@ -29,12 +29,12 @@
     }
     
     .notificationIcon:active {
-    color: #673ab7;
+    color: blueviolet;
     }
     
     
     .icon {
-    color:#673ab7;
+    color:blueviolet;
     }
     /* @media only screen and (max-width: 1600px) {
     .notificationIcon {
