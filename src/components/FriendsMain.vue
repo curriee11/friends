@@ -16,6 +16,7 @@
                   rounded
                   clearable
                   append-inner-icon="mdi-magnify"
+                  
                 ></v-text-field>
               </v-col>
               <v-col cols="5">
@@ -78,6 +79,9 @@ export default {
 </script>
 
 <style scoped>
+/* .search-field .v-text-field.mdi-magnify:hover {
+    cursor: pointer;
+} */
 .left-panel, .right-panel {
   padding: 16px;
 }
@@ -89,7 +93,9 @@ export default {
   border:0px;
 }
 .v-container{
-  margin-top: 2rem;
+  margin-top: 1rem;
+  position: relative; /* Set position to relative */
+  top:-59px;
 }
 .v-text-field{
   margin-left: 0.75rem;

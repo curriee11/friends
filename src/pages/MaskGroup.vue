@@ -7,7 +7,7 @@
       
      <!-- <MenuBar1 /> -->
      <Sidebar />
-     <v-main style="background-color: #F8F2FF; ">
+     <v-main style="background-color: #F8F2FF; " >
   <!-- <FriendsComp/> -->
   <FriendsMain/>
 
@@ -72,4 +72,5 @@ import FriendsMain from "../components/FriendsMain.vue" ;
   .icon{
     color: #673ab7;
   } */ 
+  
 </style>

@@ -140,6 +140,8 @@ export default {
   padding: 0;
   overflow-y: auto;
   height: 100%;
+  top:49px;
+  height: 668px;
 }
 .v-container, .v-row, .v-col {
   padding: 4px;
