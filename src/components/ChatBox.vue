@@ -19,8 +19,22 @@
             </div>
           </div>
           <div class="moreOptions">
-            <img loading="lazy" alt="" src="/Friends/bithreedotsvertical.svg" />
+            <!-- <img loading="lazy" alt="" src="/Friends/bithreedotsvertical.svg" /> -->
+            <v-menu>
+    <template v-slot:activator="{ props }">
+      <v-btn icon="mdi-dots-vertical" v-bind="props"></v-btn>
+    
+    </template>
+   
+
+    <v-list>
+      <v-list-item v-for="(item, i) in items" :key="i">
+        <v-list-item-title>{{ item.title }}</v-list-item-title>
+      </v-list-item>
+    </v-list>
+  </v-menu>
           </div>
+          
         </div>
         <hr />
       </div>
@@ -70,9 +84,15 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "ChatBox",
   data() {
+
     return {
       messages: [],
+      items: [
+        { title: 'View Expense' },
+        { title: 'Add Expense' },
+      ],
     };
+
   },
   props: {
     selectedChat: {
